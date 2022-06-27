@@ -22,12 +22,4 @@ export const validateCharacter = (input: Character): boolean => {
   return true;
 };
 
-export const performAttack = (attacker: Character, defender: Character) => {
-  if (!validateCharacter(attacker) || !validateCharacter(defender)) {
-    throw new Error("invalid c");
-  }
 
-  if (attacker.strength > defender.defense) {
-    defender.life -= attacker.strength - defender.defense;
-  }
-};
