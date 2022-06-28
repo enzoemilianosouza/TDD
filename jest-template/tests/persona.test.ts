@@ -67,23 +67,5 @@ describe("testing validateCharacter", () => {
     expect(result).toBe(true);
   });
 
-  test("Creating Mocks", () => {
-    const validatorMock = jest.fn(() => {
-      return true;
-    });
-  });
-
-  test("Creating Mocks", () => {
-    const validatorMock = jest.fn(() => {
-      return false;
-    });
-  });
-});
-
-describe("testing performAttack", () => {
-  test("Should perform attack", () => {
-    const validatorMock = jest.fn(() => {
-      return true;
-    });
-  });
+ 
 });
